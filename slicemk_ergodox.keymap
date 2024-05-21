@@ -1,0 +1,27 @@
+#define LAYER_MAIN 0
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/rgb.h>
+
+/ {
+	keymap {
+		compatible = "zmk,keymap";
+		layer_0 {
+			bindings = <
+				&bootloader
+				&kp GRAVE      &kp NUMBER_1   &kp NUMBER_2 &kp NUMBER_3   &kp NUMBER_4    &kp NUMBER_5 &kp LC(LG(SPACE)) &kp LG(Z)            &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0      &kp MINUS
+				&kp TAB        &kp Q          &kp W        &kp E          &kp R           &kp T        &kp LA(BACKSPACE) &kp LG(BACKSPACE)    &kp Y             &kp U         &kp I            &kp O            &kp P             &kp BACKSLASH
+				&kp CAPSLOCK   &kp A          &kp S        &kp D          &kp F           &kp G                                               &kp H             &kp J         &kp K            &kp L            &kp SEMICOLON     &kp SINGLE_QUOTE
+				&kp LEFT_SHIFT &kp Z          &kp X        &kp C          &kp V           &kp B        &kp BACKSPACE     &kp DELETE           &kp N             &kp M         &kp COMMA        &kp PERIOD       &kp SLASH         &kp RIGHT_SHIFT
+				&kp ESCAPE     &kp LEFT_ARROW &kp UP_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW                                                                       &kp LESS_THAN &kp GREATER_THAN &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp EQUAL
+				                                                                          &kp DELETE   &kp HOME          &kp END              &kp INSERT
+				                                                          &kp SPACE       &kp LEFT_ALT &kp PAGE_UP       &kp PAGE_DOWN        &kp RIGHT_CONTROL &kp RETURN
+				                                                                                       &kp LEFT_GUI      &kp LC(LS(LEFT_ALT))
+			>;
+		};
+	};
+};
